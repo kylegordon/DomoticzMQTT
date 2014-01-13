@@ -20,7 +20,7 @@ var DomoticzPort = '8080';										//Port of Domoticz
 //Configure MQTT Broker settings
 var BrokerHost = 'localhost';
 var BrokerPort = 1883;
-var BrokerTopic = '/Arduino/#';
+var BrokerTopic = '/Domoticz/#';
 
 //Connect to the MQTT Broker
 client = mqtt.createClient(BrokerPort, BrokerHost);
