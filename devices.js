@@ -35,6 +35,8 @@ function getDevice(DeviceType, svalue) {
 			dsubtype = 1;
 			svalue = svalue + ';0';  // don't know why this is needed
 			// also for no apparent reason the &did cannot be a random string so it will end up like 0000
+			// ++andriej: it is for the definition of temp-hydro comfort, in Domoticz it's shown as "Normal" when 0
+			// 0 - normal, 1 - comfort, 2 - dry, 3 - wet
 			var result = new array();
 			result['dtype'] = dtype;
 			result['dsubtype'] = dsubtype;
